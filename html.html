@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h3>Cadastro de Imoveis</h3>  
+
+
+  <form onsubmit="App.cadastro()">
+    <p>
+      <label>Tipo:</label>
+
+      <select name="tipo">
+
+        <option value="Apartamento">Apartamento</option>
+        <option value="Casa">Casa</option>
+
+      </select>
+
+    </p>
+    <p>
+      <label >Area:</label>
+      <input type="number"name="area" step="any" min="0"> 
+    </p>
+    <p>
+      <input type="checkbox" name="alugado"> Alugado
+    </p>
+
+    <button type="submit">Salvar</button>
+    <button type="button" onclick="">Limpar</button>
+  </form>
+
+  <br>
+
+  <br>
+
+  <h3>Imoveis cadastrados</h3>
+  <ul id="properties"></ul>
+  <script src="js.js"></script>
+  <script src="app.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
